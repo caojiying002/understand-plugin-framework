@@ -57,7 +57,7 @@ public class AMSHookHelper {
         //        40
 
          Field gDefaultField =null;
-        if (Build.VERSION.SDK_INT >= 26) {
+        if (android.os.Build.VERSION.SDK_INT >= 26) {
             Class<?> activityManager = Class.forName("android.app.ActivityManager");
              gDefaultField = activityManager.getDeclaredField("IActivityManagerSingleton");
         }else{
